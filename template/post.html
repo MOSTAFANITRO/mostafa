@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block contant %}
+<h1>This is Post Page</h1>
+    {% for i in p %}
+        <a href="{% url 'details' i.id %}">    <h1>{{ i.title }}</h1> </a>
+
+    {% endfor %}
+
+    {% endblock contant %}
+
+

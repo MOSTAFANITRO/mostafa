@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block contant %}
+<a href="{% url 'post' %}" class ="btn btn-success">Back</a>
+<a href="{% url 'delete' p.id %}" class ="btn btn-success">Delete</a>
+<a href="{% url 'update' p.id %}" class ="btn btn-success">update</a>
+{{ p.title }}
+{{ p.body }}
+{% endblock contant %}

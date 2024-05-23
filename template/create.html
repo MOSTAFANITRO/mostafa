@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block contant %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ post }}
+    <input type="submit" value="send">
+
+{% endblock contant %}
